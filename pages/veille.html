@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Yazid Brahmi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .veille-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .veille-card:hover { transform: translateY(-5px); }
+
+        .source-list { list-style: none; padding: 0; }
+        .source-list li { margin-bottom: 15px; display:flex; align-items:center; }
+        .source-list i { margin-right: 15px; color:#3498db; }
+
+        .tech-tags { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+        .tag { background:#e1f0fa; color:#3498db; padding:8px 15px; border-radius:20px; }
+
+        .veille-content { display:grid; grid-template-columns:1fr; gap:30px; }
+        .resource-link { color:#3498db; text-decoration:none; display:inline-flex; align-items:center; margin-top:10px; }
+        .resource-link i { margin-right:8px; }
+        .resource-link:hover { text-decoration:underline; }
+
+        /* Styles pour le bloc de téléchargement du fichier veille */
+        .veille-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .veille-description {
+            margin: 6px 0 0 0;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+        }
+
+        /* Fin des styles pour le bloc de téléchargement */
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Yazid Brahmi</a>
+            <div class="nav-links">
+                <a href="../index.html">Accueil</a>
+                <a href="competences.html">Compétences</a>
+                <a href="attestations.html">Attestations</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="formations.html">Formations</a>
+                <a href="projet.html">Projets et TP</a>
+                <a href="veille.html">Veille</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Veille Technologique</h2>
+                <h3>L’utilisation de l’intelligence artificielle dans les cyberattaques</h3>
+            </div>
+
+
+
+            <!-- Bloc : Fichier veille2 (ajouté pour téléchargement) -->
+            <div class="veille-card" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                <div>
+                    <h3 class="veille-title" style="margin:0; font-weight:bold;">Fichier veille</h3>
+                    <p class="veille-description" style="margin:6px 0 0 0; color:#666; font-weight:bold;">Télécharge le fichier veille (Analyse technologique).</p>
+                </div>
+                <div>
+                    <a class="btn" href="../documents/Veille1.xlsx" target="_blank" rel="noopener" style="background:linear-gradient(90deg,var(--primary),var(--accent));">Télécharger</a>
+                </div>
+            </div>
+
+            <!-- Section principale de veille : articles sélectionnés avec numérotation -->
+           <div class="veille-grid" style="margin-bottom:20px;">
+
+    <article class="veille-card">
+        <h3>1. Cyber IA : actualités du 12 nov. 2025</h3>
+        <div class="meta">12 novembre 2025 — Source : DCOD</div>
+        <p class="summary">Résumé : L'article documente le malware PROMPTFLUX, premier exemple concret d'intelligence artificielle malveillante utilisant Gemini pour réécrire dynamiquement son propre code et échapper aux signatures antivirus traditionnelles. Cette attaque marque l'émergence des malwares "auto-évolutifs" pilotés par IA.</p>
+        <p><a href="https://dcod.ch/2025/11/12/cyber-ia-actualites-du-12-nov-2025" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>2. Cyberattaque à grande échelle reposant sur IA a été déjouée par Anthropic</h3>
+        <div class="meta">14 novembre 2025 — Source : 01net</div>
+        <p class="summary">Résumé : L'article révèle une campagne de cyberattaque à grande échelle entièrement orchestrée par une IA chinoise utilisant Claude (Anthropic), capable de gérer reconnaissance réseau, génération d'exploits et exfiltration de données. Déjouée par Anthropic, cette attaque marque un tournant dans l'usage d'IA quasi-autonome dans la cybercriminalité.</p>
+        <p><a href="https://www.01net.com/actualites/cyberattaque-grande-echelle-reposant-ia-ete-dejouee-anthropic1308088.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>3. Cybersécurité, RGPD & IA : Actus novembre 2025</h3>
+        <div class="meta">25 novembre 2025 — Source : Witik</div>
+        <p class="summary">Résumé : La synthèse mensuelle recense des détournements de Claude Code et Gemini par des acteurs étatiques pour générer du code malveillant, automatiser l'ingénierie sociale et adapter les attaques aux contre-mesures, atteignant 90% d'automatisation dans certaines campagnes d'espionnage.</p>
+        <p><a href="https://www.witik.io/blog/cybersecurite-ia-rgpd-actus-novembre-2025" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>4. L'IA attire tous les regards en tant que menace majeure pour la cybersécurité en 2026</h3>
+        <div class="meta">2 décembre 2025 — Source : BusinessWire / Experian</div>
+        <p class="summary">Résumé : Le rapport Data Breach Industry Forecast 2026 prédit l'explosion des profils synthétiques IA, agents autonomes et malwares polymorphes générés par intelligence artificielle, transformant radicalement les techniques d'usurpation d'identité et d'attaque automatisée à grande échelle.</p>
+        <p><a href="https://www.businesswire.com/news/home/20251202859529/fr" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>5. CIA et cybersécurité : Comment les entreprises s'adaptent en 2026</h3>
+        <div class="meta">04 décembre 2025 — Source : Coursera FR</div>
+        <p class="summary">Résumé : 66% des entreprises anticipent un impact majeur de l'intelligence artificielle sur la cybersécurité en 2026, avec des attaques automatisées comme le phishing IA ultra-personnalisé, les deepfakes vocaux/vidéo et la reconnaissance temps réel de vulnérabilités dépassant les capacités humaines de défense.</p>
+        <p><a href="https://www.coursera.org/fr-FR/articles/ai-in-cybersecurity" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>6. Cyberhebdo du 5 décembre 2025 : des organisations affectées dans au moins 7 pays</h3>
+        <div class="meta">05 décembre 2025 — Source : Le MagIT</div>
+        <p class="summary">Résumé : Une campagne coordonnée d'intelligence artificielle malveillante frappe des organisations dans 7 pays, utilisant des bots conversationnels IA pour du phishing ciblé et des deepfakes multimodaux pour de l'ingénierie sociale à grande échelle, démontrant une coordination transnationale inédite.</p>
+        <p><a href="https://www.lemagit.fr/actualites/366636032/Cyberhebdo-du-5-decembre-2025-des-organisations-affectees-dans-au-moins-7-pays" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>7. Cybersécurité : les 10 plus grandes menaces qui planent sur 2026</h3>
+        <div class="meta">06 décembre 2025 Source : 01net</div>
+        <p class="summary">Résumé : L'intelligence artificielle criminelle intègre le top 10 des menaces 2026 avec le phishing ultra-personnalisé, les ransomwares intelligents adaptatifs et l'exploitation automatisée de failles zero-day, surpassant les cybercriminels humains en vitesse, échelle et sophistication.</p>
+        <p><a href="https://www.01net.com/actualites/cybersecurite-menaces-planent-2026.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>8. Entre IA et quantique, 8 menaces cyber à anticiper pour 2026</h3>
+        <div class="meta">08 décembre 2025 — Source : Journal Du Net</div>
+        <p class="summary">Résumé : Huit menaces IA majeures identifiées pour 2026 : attaques entièrement autonomes, deepfakes indétectables, ingénierie sociale automatisée à l'échelle industrielle et agents IA spécialisés dans l'exploitation temps réel de vulnérabilités, redéfinissant la cybersécurité.</p>
+        <p><a href="https://www.journaldunet.com/cybersecurite/1546577-entre-ia-et-quantique-8-menaces-cyber-a-anticiper-pour-2026/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>9. Le vrai ChatGPT a été détourné par des hackers : on vous explique l’une des campagnes cybercriminelles les plus fourbes de l’année</h3>
+        <div class="meta">09 décembre 2025 — Source : Numerama</div>
+        <p class="summary">Résumé : Kaspersky révèle une campagne où des hackers détournent Google Ads pour promouvoir un faux ChatGPT légitime qui injecte des infostealers volant mots de passe, cookies et données bancaires. L'IA de marque devient un cheval de Troie parfait exploitant la confiance des utilisateurs.</p>
+        <p><a href="https://www.numerama.com/cyberguerre/2139275-le-vrai-chatgpt-a-ete-detourne-par-des-hackers-on-vous-explique-lune-des-campagnes-cybercriminelles-les-plus-fourbes-de-lannee.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>10. Cyber IA : actualités du 10 déc 2025</h3>
+        <div class="meta">10 décembre 2025 — Source : Dcod</div>
+        <p class="summary">Résumé : L'intelligence artificielle dope le phishing avec des campagnes personnalisées en masse, déploie des agents autonomes pour l'espionnage persistant et exploite automatiquement les failles zero-day, réduisant drastiquement le besoin d'expertise humaine dans les cyberattaques.</p>
+        <p><a href="https://dcod.ch/2025/12/10/cyber-ia-actualites-du-10-dec-2025/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>11. Les dernières actus des cybercriminels – 12 déc 2025</h3>
+        <div class="meta">12 Décembre 2025 — Source : Dcod</div>
+        <p class="summary">Résumé : Un adolescent japonais de 17 ans arrêté après avoir utilisé l'intelligence artificielle pour générer une attaque contre Kaikatsu Club, impactant 7,3 millions de clients. Premier cas documenté d'attaque IA orchestrée par un non-expert.</p>
+        <p><a href="https://dcod.ch/2025/12/12/les-dernieres-actus-des-cybercriminels-12-dec-2025/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>12. Les brèves de novembre - décembre 2025</h3>
+        <div class="meta">12 décembre 2025 — Source : Noticio</div>
+        <p class="summary">Résumé : Le kit Spiderman automatise via intelligence artificielle la création de faux sites bancaires européens, permettant à des novices de lancer des campagnes de phishing sophistiquées en quelques clics. Phishing-as-a-service boosté par IA accessible à tous.</p>
+        <p><a href="https://noticio.co/breves-nov-dec-2025/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>13. Veille données personnelles – Décembre 2025</h3>
+        <div class="meta">1 décembre 2025 — Source : Squair Law</div>
+        <p class="summary">Résumé : Le bulletin juridique alerte sur l'émergence des cyberattaques automatisées par IA et plaide pour des infrastructures sécurisées adaptées, soulignant que les réglementations actuelles comme le RGPD ne couvrent pas encore les menaces générées par intelligence artificielle.</p>
+        <p><a href="https://www.squairlaw.com/fr/blog/veille-donnees-personnelles---decembre-2025" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>14. Cyberattaques animées par l’IA : le premier ransomware intelligent a été découvert</h3>
+        <div class="meta">Fin 2025 — Source : 01net</div>
+        <p class="summary">Résumé : Découverte du premier ransomware "autonome et intelligent" utilisant l'intelligence artificielle pour s'adapter en temps réel aux défenses, modifier ses signatures et optimiser sa propagation. Nouvelle génération de malwares adaptatifs défiant les antivirus traditionnels.</p>
+        <p><a href="https://www.01net.com/actualites/cyberattaques-animees-ia-premier-ransomware-autonome-intelligent-decouvert.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>15. 2026 : l'IA agentique souhaite une bonne année à la cybersécurité</h3>
+        <div class="meta">Fin 2025 — Source : ZDNet France</div>
+        <p class="summary">Résumé : L'article explore comment les agents IA orchestrent des attaques complètes de bout en bout (phishing, reconnaissance réseau, exfiltration de données) avec une autonomie croissante, ne nécessitant plus qu'une supervision humaine minimale aux étapes critiques stratégiques.</p>
+        <p><a href="https://www.zdnet.fr/blogs/green-si/2026-lia-agentique-souhaite-une-bonne-annee-a-la-cybersecurite-486424.htm" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>16. En 7 constats, comment l'IA a redessiné la cyber en 2025</h3>
+        <div class="meta">17 décembre 2025 — Source : CIO-Online</div>
+        <p class="summary">Résumé : Sept constats 2025 montrent que l'intelligence artificielle donne des "superpouvoirs" aux attaquants via phishing ultra-ciblé, deepfakes perfectionnés, malwares auto-modifiables et reconnaissance automatisée de vulnérabilités, redessinant totalement la cybersécurité.</p>
+        <p><a href="https://www.cio-online.com/actualites/lire-en-7-constats-comment-l-ia-a-redessine-la-cyber-en-2025-16735.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>17. Malgré l’adoption de l’IA comme accélérateur de la réponse aux menaces cyber, seulement 6 % des entreprises se disent prêtes à faire face aux cyberattaques</h3>
+        <div class="meta">6 novembre 2025 — Source : PWC France</div>
+        <p class="summary">Résumé : Seulement 2% des entreprises françaises disposent d'une résilience cyber face à l'intelligence artificielle agentique qui automatise attaques et défenses simultanément. L'IA offensive progresse plus rapidement que les capacités mondiales de détection et de réponse.</p>
+        <p><a href="https://www.pwc.fr/fr/espace-presse/communiques-de-presse/2025/novembre/seulement-2-pourcent-des-entreprises-ont-mis-en-oeuvre-une-resilience-cyber-a-l-echelle-de-leur-organisation.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>18. PME vulnérables, prestataires négligés, quantique... 5 failles que les pirates vont exploiter en 2026</h3>
+        <div class="meta">6 janvier 2026 — Source : La Tribune</div>
+        <p class="summary">Résumé : L’article souligne que l’intelligence artificielle devient un levier majeur pour les cybercriminels en 2026, notamment à travers l’automatisation des attaques, le phishing ciblé et l’exploitation rapide des vulnérabilités. Les PME et les infrastructures mal sécurisées sont particulièrement exposées, tandis que les capacités de défense peinent à suivre l’évolution rapide des menaces basées sur l’IA.</p>
+        <p><a href="https://www.latribune.fr/article/tech/96062619032137/pme-vulnerables-prestataires-negliges-quantique-5-failles-que-les-pirates-vont-exploiter-en-2026?utm_source=chatgpt.com" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+     <article class="veille-card">
+        <h3>19. L'IA attire tous les regards en tant que menace majeure pour la cybersécurité en 2026 </h3>
+        <div class="meta">3 décembre 2025 — Source : AFP</div>
+        <p class="summary">Résumé : L’article met en avant l’intelligence artificielle comme une menace majeure pour la cybersécurité en 2026, en raison de son utilisation croissante par les cybercriminels pour automatiser et renforcer leurs attaques. L’IA permet des opérations plus discrètes, ciblées et difficiles à détecter, obligeant les entreprises et les institutions à repenser leurs stratégies de défense face à des menaces toujours plus sophistiquées.</p>
+        <p><a href="https://www.afp.com/fr/infos/lia-attire-tous-les-regards-en-tant-que-menace-majeure-pour-la-cybersecurite-en-2026" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>20. Hackers Actively Exploit AI Deployments as 91,000+ Attack Sessions Are Detected</h3>
+        <div class="meta">9 janvier 2026 — Source : Cyber Press</div>
+        <p class="summary">Résumé : L’article met en avant une prévision alarmante pour 2026, selon laquelle l’intelligence artificielle deviendra un outil central des cybercriminels. Moody’s, une grande société d’analyse, estime que les attaques basées sur l’IA vont se multiplier, permettant aux auteurs d’automatiser des campagnes malveillantes, de créer des deepfakes convaincants et de personnaliser leurs attaques à grande échelle. Cette évolution est largement due à l’accessibilité accrue des technologies d’IA, que les pirates exploitent pour dépasser les défenses traditionnelles et lancer des attaques complexes avec un minimum de ressources. Cette tendance devrait aussi conduire à une pression accrue pour harmoniser les réglementations et les stratégies de cybersécurité à l’échelle internationale.</p>
+        <p><a href="https://cyberpress.org/hackers-actively-exploit-ai-deployments/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>21. Les principales cyberattaques de 2026 : pourquoi elles seront plus crédibles et plus difficiles à détecter</h3>
+        <div class="meta">12 janvier 2026 — Source : Le Matin</div>
+        <p class="summary">Résumé : Un second article récent souligne que l’IA ne se contente plus d’assister les cybercriminels, mais elle pourrait bientôt rendre certaines attaques entièrement autonomes. Des experts anticipent que l’IA permettra des attaques ultra-rapides et intelligentes capables d’analyser en temps réel les systèmes ciblés, d’adapter leurs méthodes en fonction des défenses rencontrées et d’exécuter des actions sans intervention humaine. Cela inclut des tactiques comme le phishing hyper-personnalisé, des malwares adaptatifs et d’autres formes d’exploitation automatisée de vulnérabilités. Ces développements rendent les attaques plus difficiles à détecter et à contrer, obligeant les organisations à repenser leurs défenses et à investir dans des outils de sécurité basés eux aussi sur l’IA.</p>
+        <p><a href="https://lematin.ma/societe/pourquoi-les-cyberattaques-de-2026-seront-plus-difficiles-a-detecter/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>22. Alerte sur Mac : un virus codé par l’IA mine des cryptos à votre insu </h3>
+        <div class="meta">13 janvier 2026 — Source : 01net</div>
+        <p class="summary">Résumé : L’article présente SimpleStealth, un malware pour Mac dont une partie du code a été générée par des IA génératives, ce qui le rend difficile à détecter par les antivirus traditionnels. Le logiciel se fait passer pour l’IA Grok d’Elon Musk, demande le mot de passe système, contourne certaines protections d’Apple et exploite les capacités de l’IA pour faciliter la création et la prolifération de nouvelles variantes qui minent des cryptomonnaies à l’insu des victimes.</p>
+        <p><a href="https://www.01net.com/actualites/alerte-mac-virus-code-ia-mine-cryptos-insu.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>23. Cybersécurité 2026 : des intrusions liées à l'IA aux menaces géopolitiques croissantes</h3>
+        <div class="meta">11 janvier 2026 — Source : euronews</div>
+        <p class="summary">Résumé : L’article explique que l’IA devient un outil central pour les attaquants, avec des agents d’IA capables de coordonner des attaques de façon autonome, d’automatiser le phishing et de lancer de nouvelles formes d’attaques comme l’injection de prompt ou le vishing (clonage de voix par IA).​ Il montre aussi que les défenseurs utilisent eux‑mêmes des agents d’IA pour analyser du code malveillant, résumer les attaques et identifier plus vite les tactiques adverses, ce qui illustre une véritable course à l’armement entre attaquants et équipes de sécurité.​</p>
+        <p><a href="https://fr.euronews.com/next/2026/01/12/cybersecurite-2026-des-intrusions-liees-a-lia-aux-menaces-geopolitiques-croissantes" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>24. Cyberattaques : les 11 incidents majeurs du 13 jan 2026</h3>
+        <div class="meta">13 janvier 2026 — Source : dcod</div>
+        <p class="summary">Résumé : L’article présente plusieurs cyberattaques majeures survenues autour du 13 janvier 2026, en montrant comment des techniques d’automatisation inspirées de l’IA permettent de multiplier les points d’entrée (sites clonés, QR codes, faux téléchargements). Ces méthodes rendent les intrusions plus rapides, plus difficiles à détecter et obligent les équipes de sécurité à renforcer la surveillance des identités et des accès.​</p>
+        <p><a href="https://dcod.ch/2026/01/13/cyberattaques-les-11-incidents-majeurs-du-13-jan-2026/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>25. Morning 13/01/2026 : Google Gemini va propulser le nouveau Siri, Des écouteurs OpenAI, Un agent IA Anthropic,...</h3>
+        <div class="meta">13 janvier 2026 — Source : ZDNet</div>
+        <p class="summary">Résumé : Ce contenu revient sur l’émergence d’agents d’IA intégrés aux solutions de cybersécurité, tout en soulignant que les mêmes mécanismes sont utilisés par les attaquants pour automatiser la recherche de failles et la génération de code malveillant. Il met en avant une course permanente entre IA offensive et IA défensive, où la rapidité d’analyse et d’automatisation devient un avantage décisif.​</p>
+        <p><a href="https://www.zdnet.fr/actualites/zdnet-morning-13-01-2026-google-gemini-va-propulser-le-nouveau-siri-des-ecouteurs-openai-un-agent-ia-anthropic-488066.htm" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>26. La revue de presse du mardi 13 janvier 2026 pour la sécurité</h3>
+        <div class="meta">13 janvier 2026 — Source : aefinfo</div>
+        <p class="summary">Résumé : La revue de presse regroupe plusieurs sources qui alertent sur l’usage croissant de l’IA dans les cyberattaques, en particulier pour industrialiser la fraude et contourner les mécanismes classiques de contrôle. Elle souligne que l’IA permet à des groupes criminels moins expérimentés d’accéder à des capacités d’attaque avancées, élargissant le nombre et la diversité des menaces.​</p>
+        <p><a href="https://www.aefinfo.fr/depeche/744015-la-revue-de-presse-du-mardi-13-janvier-2026-pour-la-securite" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>27. Rapport du WEF : la cyberfraude en tête des risques mondiaux</h3>
+        <div class="meta">12 janvier 2026 — Source : Medi1 / WEF Global Cybersecurity Outlook</div>
+        <p class="summary">Résumé : Ce papier reprend un rapport du Forum économique mondial et montre que la cyberfraude devient un des principaux risques globaux, amplifiée par l’automatisation et l’intelligence artificielle. L’IA est utilisée pour produire des contenus frauduleux très crédibles, personnaliser les attaques et exploiter massivement les faiblesses humaines et organisationnelles.​</p>
+        <p><a href="https://reports.weforum.org/docs/WEF_AM26_Global_Cybersecurity_Outlook_News_Release_FR.pdf" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>28. Cyberhebdo du 16 janvier 2026 : reprise des hostilités</h3>
+        <div class="meta">16 janvier 2026 — Source : LeMagIT</div>
+        <p class="summary">Résumé : L’article synthétise les grandes attaques de la semaine et insiste sur la reprise d’activités malveillantes de plus en plus structurées, où l’IA accélère la phase de repérage et d’exploitation. Il met en avant que la sophistication croissante des campagnes oblige les SOC à passer à des outils de corrélation et d’analyse dopés à l’IA pour suivre le rythme.​</p>
+        <p><a href="https://www.lemagit.fr/actualites/366637380/Cyberhebdo-du-16-janvier-2026" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>29. Menaces cybersécurité 2026 : Shadow Agent, attaques automatisées… Que nous révèle le rapport de Google Cloud ?</h3>
+        <div class="meta">08 janvier 2026 — Source : Visiplus academy</div>
+        <p class="summary">Résumé : Ce contenu détaille le concept de « Shadow Agent », des agents d’IA semi‑autonomes utilisés par les attaquants pour enchaîner reconnaissance, génération de leurres et exploitation de vulnérabilités. Il explique que l’IA ne crée pas forcément de nouveaux types d’attaques, mais qu’elle augmente considérablement leur vitesse, leur volume et leur efficacité.​</p>
+        <p><a href="https://academy.visiplus.com/blog/dev-web-informatique/menaces-cybersecurite-2026-shadow-agent-attaques-automatisees-que-nous-revele-le-rapport-de-google-cloud-2026-01-08" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>30. Les perspectives de la cybersécurité en 2026</h3>
+        <div class="meta">06 janvier 2026 — Source : guardia</div>
+        <p class="summary">Résumé : L’article dresse un panorama des défis de la cybersécurité en 2026 et présente l’IA comme un multiplicateur d’attaques, notamment via le phishing automatisé et les deepfakes. Il souligne que les entreprises doivent mettre en place une gouvernance spécifique de l’IA, sous peine de voir leurs propres modèles devenir des surfaces d’attaque à part entière.​</p>
+        <p><a href="https://guardia.school/le-lab/les-perspectives-de-la-cybersecurite-en-2026.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>31. Cybersécurité en entreprise : des menaces amplifiées par l’IA à suivre de près en 2026</h3>
+        <div class="meta">07 janvier 2026 — Source : Inforisque</div>
+        <p class="summary">Résumé : Ce texte explique que les menaces pesant sur les entreprises sont amplifiées par l’IA, qui permet à des agents offensifs d’automatiser l’identification de cibles, la création de contenus piégés et l’exploitation de failles en un temps record. Il montre aussi que la mauvaise utilisation d’assistants IA internes peut entraîner des fuites involontaires de données sensibles, ajoutant un risque supplémentaire à gérer.​</p>
+        <p><a href="https://inforisque.fr/actualite-du-risque/article-12765-2026-01-08-cybersecurite-entreprise-menaces-amplifiees-IA-suivre-pres-2026.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>32. Cybersécurité: l’ère des menaces pilotées par l’IA </h3>
+        <div class="meta">16 janvier 2026 — Source : Techshowparis</div>
+        <p class="summary">L’article met en avant l’intelligence artificielle comme un moteur clé de la prochaine génération de cybermenaces, notamment via l’automatisation du phishing, la génération de contenus trompeurs et l’exploitation accélérée des failles. Il insiste sur le fait que l’IA permet aux attaquants de mener des opérations plus massives, plus ciblées et plus difficiles à anticiper, obligeant les organisations à intégrer elles aussi des capacités d’IA défensive dans leurs stratégies de cybersécurité.</p>
+        <p><a href="https://www.techshowparis.fr/actualites-tech-show-paris/cybersecurite-lere-des-menaces-pilotees-par-ia" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+
+    <article class="veille-card">
+        <h3>33. Cyberattaques et IA en tête des inquiétudes des entreprises pour 2026</h3>
+        <div class="meta">19 janvier 2026 — Source : batiweb</div>
+        <p class="summary">Résumé : L'article met en avant l'intelligence artificielle comme une menace majeure pour la cybersécurité en 2026, en raison de son utilisation croissante par les cybercriminels pour automatiser et renforcer leurs attaques. L'IA permet des opérations plus discrètes, ciblées et difficiles à détecter, obligeant les entreprises et les institutions à repenser leurs stratégies de défense face à des menaces toujours plus sophistiquées.​</p>
+        <p><a href="https://www.batiweb.com/actualites/etude/cyberattaques-et-ia-en-tete-des-inquietudes-des-entreprises-pour-2026-48053" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>34. L’IA, accélérateur de cyber‑menaces en 2026 : agents IA détournés, attaques autonomes et robots hackés</h3>
+        <div class="meta">26 janvier 2026 — Source : clementdonzel</div>
+        <p class="summary">Résumé : Sept constats 2025 montrent que l’intelligence artificielle donne des « superpouvoirs » aux attaquants via phishing ultra‑ciblé, deepfakes perfectionnés, malwares auto‑modifiables et reconnaissance automatisée de vulnérabilités, redessinant totalement la cybersécurité​</p>
+        <p><a href="https://www.clementdonzel.com/lia-accelerateur-de-cyber-menaces-en-2026-agents-ia-detournes-attaques-autonomes-et-robots-hackes/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>35. AI accelerates industrial cyber threats, transforms OT attack landscape</h3>
+        <div class="meta">31 janvier 2026 — Source : Industrial cyber</div>
+        <p class="summary">Résumé : L’IA accélère les cybermenaces industrielles en automatisant la reconnaissance, la création d’exploits et l’exfiltration de données, ce qui permet à des acteurs moins qualifiés de mener des attaques complexes sur les environnements OT.​</p>
+        <p><a href="https://industrialcyber.co/features/ai-accelerates-industrial-cyber-threats-transforms-ot-attack-landscape-to-challenge-traditional-defenses/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>36. Cyberhebdo du 23 janvier : une semaine intense</h3>
+        <div class="meta">1 fevrier 2026 — Source : leMagIT</div>
+        <p class="summary">Résumé : Une semaine intense de cyberattaques internationales illustre l’usage croissant d’outils automatisés et d’IA pour préparer, coordonner et amplifier les campagnes offensives à grande échelle.​</p>
+        <p><a href="https://www.lemagit.fr/actualites/366637564/Cyberhebdo-du-23-janvier-une-semaine-intense" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>37. Les perspectives de la cybersécurité en 2026</h3>
+        <div class="meta">6 janvier 2026 — Source : guardia</div>
+        <p class="summary">Résumé : L’IA générative devient un multiplicateur majeur d’attaques, permettant de produire massivement du phishing personnalisé, des contenus de désinformation et des codes malveillants, tout en exposant de nouveaux risques liés aux agents IA utilisés par les entreprises.​</p>
+        <p><a href="https://guardia.school/le-lab/les-perspectives-de-la-cybersecurite-en-2026.html" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>38. 2026 threat landscape: AI‑generated attacks target integrated networks</h3>
+        <div class="meta">28 janvier 2026 — Source : ET Edge Insights</div>
+        <p class="summary">Résumé : Le paysage des menaces 2026 est marqué par des attaques générées et pilotées par l’IA, capables de cibler des réseaux intégrés avec des campagnes de phishing ultra‑personnalisées et des malwares adaptatifs, imposant une réponse de sécurité elle‑même basée sur l’IA.​</p>
+        <p><a href="https://etedge-insights.com/technology/cyber-security/2026-threat-landscape-ai-generated-attacks-target-integrated-networks/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>39. Cyberattaques et IA : les nouveaux angles morts du risque d’entreprise en 2026</h3>
+        <div class="meta">19 janvier 2026 — Source : incyber.org</div>
+        <p class="summary">Résumé : L’IA apparaît comme l’un des principaux angles morts du risque d’entreprise en 2026, car son usage généralisé ouvre de nouvelles surfaces d’attaque (modèles, agents IA, données) que les organisations sous‑estiment encore.​</p>
+        <p><a href="https://incyber.org/article/cyberattaques-et-ia-les-nouveaux-angles-morts-du-risque-dentreprise-en-2026/" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    <article class="veille-card">
+        <h3>40. Cybermenaces 2026 : l’attaque passe en mode industriel</h3>
+        <div class="meta">20 janvier 2026 — Source : IT for business</div>
+        <p class="summary">Résumé : Le panorama 2026 montre que l’attaque passe en mode industriel grâce à l’IA : phishing massif, exploitation rapide de vulnérabilités et agents autonomes coordonnent des campagnes de plus en plus sophistiquées et difficiles à contenir.​</p>
+        <p><a href="https://www.itforbusiness.fr/panorama-des-cybermenaces-2026-lattaque-passe-en-mode-industriel-99458" target="_blank" rel="noopener">Lire l’article</a></p>
+    </article>
+
+    
+
+
+    
+
+</div>
+
+    </section>
+</body>
+</html>
